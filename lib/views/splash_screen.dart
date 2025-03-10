@@ -7,6 +7,7 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print("Future deleyed printed");
     Future.delayed(const Duration(seconds: 3), () {
       Get.off(() => const MyBottomNavigation());
     });
